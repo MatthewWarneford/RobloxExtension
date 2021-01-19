@@ -1,0 +1,206 @@
+
+body, html {
+  height: 100%;
+  display: grid;
+
+  /*background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7) ),
+   url("./images/roblox_wall.jpg") no-repeat center center fixed;*/
+   background-color: #151A30;
+
+  font-family: Heebo, sans-serif;
+}
+
+h1 {
+  letter-spacing: -0.125rem;
+  width: 100%;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  letter-spacing: -0.125rem;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+.content {
+  color: white;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 337px minmax(250px, auto);
+  gap: 0px 0px;
+  grid-template-areas: "top" "bottom";
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
+  transition: all 0.2s;
+  background-color: black;
+}
+
+#top {
+  grid-area: top;
+  /*background-image: url("./images/game.jpg");*/
+  background-size: cover;
+  background-color: black;
+}
+
+#bottom {
+  padding: 30px;
+  grid-area: bottom;
+  background-image: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.76) 00%);
+  color: rgb(255, 255, 255);
+  font-family: Heebo, sans-serif;
+  font-size: 1em;
+  line-height: 1.75;
+  font-weight: 400;
+  /*background-color: #96A7FF;*/
+  background-color: #222B45;
+}
+
+.game-info {
+  opacity: 0;
+  transition: all 0.2s;
+  padding-top: 20px;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.author {
+  margin-top: 10px;
+}
+
+.strong {
+  font-weight: bolder;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+#left-title {
+  width: 75%
+}
+
+#right-title {
+  width: 25%;
+  text-align: right;
+}
+
+.performance {
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.stats {
+  padding-right: 10px;
+}
+
+.growth {
+  width: 100%;
+  vertical-align: bottom;
+  margin-top: 30px;
+  display: inline-block
+}
+
+.growth h2 {
+  line-height: 1;
+  align-items: center;
+  padding-right: 5px;
+  color: #00D68F;
+
+}
+
+.growth span {
+  line-height: 1;
+  align-items: center;
+}
+
+#left-footer {
+  width: 75%
+}
+
+#right-footer {
+  width: 25%;
+  text-align: right;
+  margin-top: 6px;
+}
+
+.next-game {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.next-game a {
+  transition: all 0.2s;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(139deg) brightness(108%) contrast(101%);
+}
+
+.next-game a:hover {
+  filter: invert(62%) sepia(1%) saturate(0%) hue-rotate(10deg) brightness(98%) contrast(92%);
+}
+
+.next-game img {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+#growthChart {
+  display: none;
+  padding-top: 23px;
+}
+
+#stats {
+  display: flex;
+  width: 100%
+}
+
+#text-stats {
+  width: 100%
+}
+
+#chartjs-tooltip {
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 3px;
+  /* color: #00d68f; */
+  color: white;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+#bottom-content {
+}

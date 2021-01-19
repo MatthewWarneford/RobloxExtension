@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Tab</title>
+  <link rel="stylesheet" type="text/css" href="play-button.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+
+    <div class="grid-container">
+      <div id="top" class="hidden">
+        <div class="next-game">
+          <a id="refresh"><img src="images/shuffle.svg"/></a>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="bottom-content" class="hidden">
+          <div class="title">
+              <div id="left-title">
+                <h1 id="title"></h1>
+              </div>
+              <div id="right-title">
+                <a id="play-button" href="" class="play-button bouncy">PLAY</a>
+              </div>
+          </div>
+          <div id="stats">
+            <div id="text-stats">
+              <div class="growth">
+                  <h2 id="growth-rate" class="inline"></h2><span class="inline">in <strong>2 weeks!</strong></span>
+              </div>
+              <div class="performance">
+                  <span class="stats"><span class="strong">Created:</span> <span id="created"></span></span>
+                  <span class="stats"><span class="strong">Favorites:</span> <span id="favourites"></span></span>
+                  <span class="stats"><span class="strong">Visits:</span> <span id="visits"></span></span>
+              </div>
+            </div>
+            <canvas id="growthChart" width="200" height="60"></canvas>
+          </div>
+          <div class="game-info" id="game-info">
+            <div class="description" id="description">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="Chart.js" type="text/javascript"></script>
+  <script src="numeral.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
